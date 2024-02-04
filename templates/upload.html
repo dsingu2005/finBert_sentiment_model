@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Select Folder</h2>
+
+<form action="/upload" method="post">
+    Select a folder from the bucket:
+    <select name="dropdown">
+        {% for folder in folders %}
+            <option value="{{ folder }}">{{ folder }}</option>
+        {% endfor %}
+    </select>
+    <br>
+    <input type="submit" value="Run" name="submit">
+</form>
+
+</body>
+</html>
